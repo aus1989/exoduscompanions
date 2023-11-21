@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #accordion{
+      width: 50%;
+      margin: 100px auto;
+    }
+
+    #accordion li{
+      list-style: none;
+      width: 100%;
+      border-bottom: 2px solid grey;
+      padding: 20px;
+      border-radius: 4px;
+      background-color: grey;
+      box-sizing: border-box;
+    }
+
+    #accordion li label{
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      color: white;
+    }
+
+    #accordion .accordion-content{
+      padding: 0 10px;
+      line-height: 25px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .5s;
+    }
+
+    #accordion label + input[type="radio"]{
+      display: none;
+    }
+
+    #accordion label + input[type="radio"]:checked + .accordion-content{
+      max-height: 400px;
+    }
+
+    @media (max-width: 900px) {
+      #accordion{
+        width: 90%;
+        overflow: hidden;
+      }
+
+      #accordion li{
+      width: 90%;
+      
+    }
+    }
+  </style>
+</head>
+<body>
+  <ul id="accordion">
+    <li>
+      <label for="first">What is elderly service <span class="bi bi-chevron-down"></span></label>
+      <input type="radio" name="accordion" id="first" checked>
+
+      <div class="accordion-content">
+        <p>
+          Ensuring the safety and security of our clients is a top priority. Our staff are trained to handle various situations, and we implement strict safety protocols.
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <label for="second">What is Befriending service <span class="bi bi-chevron-down"></span></label>
+      <input type="radio" name="accordion" id="second">
+
+      <div class="accordion-content">
+        <p>
+          Ensuring the safety and security of our clients is a top priority. Our staff are trained to handle various situations, and we implement strict safety protocols.
+        </p>
+      </div>
+    </li>
+  </ul>
+
+</body>
+</html>

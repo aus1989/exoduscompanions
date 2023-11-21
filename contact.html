@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exodus Companions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+
+
+</head>
+<body>
+  <header class="address-bar">
+    <p class="address-text">
+      Welcome to Exodus Companions <span>|</span><span>+234 8132208451</span>
+    </p>
+  </header>
+  <nav>
+    <a href="index.html">
+      <img src="image/Logo.png" class="logo">
+    </a>
+    
+
+    <div class="nav-link" id="navLink">
+      <i class="bi bi-x" onclick="hideMenu()"></i>
+      <ul>
+        <li class="dropdown">
+          <a href="#">Our Services</a>
+          <div class="drop-content">
+            <a class="aa" href="elderly.html">Elderly</a>
+            <a class="aa" href="befriend.html">Befriending</a>
+            <a class="aa" href="companionship.html">Companionship</a>
+            <a class="aa" href="vulnerable.html">Vulnerable</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a href="about.html">About Us</a>
+        </li>
+
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <i class="bi bi-list" onclick="showMenu()"></i>
+  </nav>
+
+  <section class="header-contact">
+    <div class="text-box">
+      <p class="text1">
+       Contact Us
+      </p>
+      
+    </div>
+  </section>
+
+  <section class="contact-us">
+    <div class="contact">
+      <div class="icon">
+        <i class="bi bi-telephone call"></i>
+      </div>
+      <div class="text">
+        <h2>Call Us</h2>
+        <span>+234 8132208451</span>
+      </div>
+    </div>
+  
+    <div class="contact">
+      <div class="icon">
+        <i class="bi bi-envelope call"></i>
+      </div>
+      <div class="text">
+        <h2>Email</h2>
+        <span>austinokebata@gmail.com</span>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="icon">
+        <i class="bi bi-geo-alt call"></i>
+      </div>
+      <div class="text">
+        <h2>Location</h2>
+        <span>Lagos, Nigeria</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-intro">
+    <div class="intro-text">
+      <h1>
+        Thank you for your interest in Exodus Companions.
+      </h1>
+
+      <p>
+        Please use this form to let us know how we can help – we are happy to call or email you to discuss your needs at your convenience.
+      </p>
+    </div>
+  </section>
+
+  <section class="section2">
+    
+    <form>
+      <div class="form-input">
+        <label>Name*</label>
+        <input type="text" required>
+      </div>
+
+      <div class="form-input">
+        <label>Email Address*</label>
+        <input type="email" required>
+      </div>
+
+      <div class="form-input">
+        <label>Phone Number*</label>
+        <input type="text" required>
+      </div>
+
+      <div class="form-input">
+        <label>Message*</label>
+        <textarea cols="30" rows="10" required></textarea>
+      </div>
+
+      <button class="btn">Submit</button>
+    </form>
+  </section>
+
+  <!--===== FOOTER SECTION ======== -->
+
+  <section class="footer1">
+
+    <div id="address">
+      <p id="p1">
+        Address
+      </p>
+
+      <p id="p2">
+        Exodus Companions <br>
+        Plot 8 Newton Ekwale Street, <br>
+        Peace Estate, <br>
+        Amuwo Odofin, <br>
+        Lagos.
+      </p>
+
+      <p id="p4">
+        <i class="bi bi-telephone"></i> +234 8132208451
+      </p> 
+
+      <p id="p6">
+        <i class="bi bi-envelope"></i> austinokebata@gmail.com 
+      </p>
+    </div>
+
+    <div id="link">
+      <p id="p11">Service Link</p>
+      <p id="p10"><a href="#">Home</a></p>
+
+      <p id="p12"><a href="#">Our Services</a></p>
+
+      <p id="p13"><a href="#">About Us</a></p>
+
+      <p id="p14"><a href="#">FAQ</a></p>
+
+      <p id="p15"><a href="#">Contact</a></p>
+    </div>
+
+    <div id="logo-icon">
+      <img src="image/Logo.png" class="logo">
+
+      <ul id="media-icon">
+        <li>
+          <a href=""><i class="bi bi-facebook media1"></i><a></a>
+        </li>
+        
+        <li>
+          <a href=""><i class="bi bi-whatsapp media2"></i></a>
+        </li>  
+      </ul>
+    </div>
+  </section>
+
+  <section class="footer2">
+    <p class="copyright">
+      &#169; 2023 Exodus Companions UK, All Rights Reserved
+    </p>
+  </section>
+  
+
+
+  <!-- JavaScript for toggle menu -->
+
+  <script src="contact.js"></script>
+
+  <script>
+    let navLink = document.getElementById("navLink");
+
+    function showMenu(){
+      navLink.style.right = "0";
+    }
+    function hideMenu(){
+      navLink.style.right = "-400px";
+    }
+  </script>
+  
+</body>
+</html>

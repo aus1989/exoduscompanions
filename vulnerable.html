@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exodus Companions</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+</head>
+<body>
+  <header class="address-bar">
+    <p class="address-text">
+      Welcome to Exodus Companions <span>|</span><span>+234 8132208451</span>
+    </p>
+  </header>
+  <nav>
+    <a href="index.html">
+      <img src="image/Logo.png" class="logo">
+    </a>
+    
+
+    <div class="nav-link" id="navLink">
+      <i class="bi bi-x" onclick="hideMenu()"></i>
+      <ul>
+        <li class="dropdown">
+          <a href="#">Our Services</a>
+          <div class="drop-content">
+            <a class="aa" href="elderly.html">Elderly</a>
+            <a class="aa" href="befriend.html">Befriending</a>
+            <a class="aa" href="companionship.html">Companionship</a>
+            <a class="aa" href="vulnerable.html">Vulnerable</a>
+          </div>
+        </li>
+
+        <li class="dropdown">
+          <a href="about.html">About Us</a>
+        </li>
+
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <i class="bi bi-list" onclick="showMenu()"></i>
+  </nav>
+
+  <section class="header-contact">
+    <div class="text-box">
+      <p class="text1">
+       Vulnerable Services
+      </p>
+
+    </div>
+  </section>
+  
+
+  <!--======== SECOND SECTION ============ -->
+
+  <section class="services-content">
+
+    <div class="services-card">
+      <h2 class="h22">Exodus Companions' Services</h2>
+
+      <p>
+        Our commitment to providing compassionate services extends beyond mere assistance. At Exodus Companions, we recognize the evolving needs of older individuals and aim to foster a sense of ease and independence in their own living spaces. Our comprehensive range of services is designed to accommodate varying levels of support, ensuring that each person receives personalized care tailored to their unique requirements. 
+        <br><br>
+        Whether it's aiding with household chores, offering companionship, or providing round-the-clock supervision, our experienced team is dedicated to enhancing the quality of life for the elderly. 
+        <br><br>
+        Choosing Exodus Companions means choosing a reliable partner in the journey of aging gracefully. We prioritize the dignity and well-being of our clients, striving to make their daily lives more manageable and enjoyable. With our in-home services, older individuals and their families can find peace of mind, knowing that compassionate and professional support is just a call away.
+
+      </p>
+    </div>
+  </section>
+
+     <!-- =========== SERVICES IMAGES ========= -->
+
+  <section class="container">
+    <div class="image-box">
+      <div class="image-box-text">
+        <h2>Vulnerable Services</h2>
+        <p>
+           
+        </p>
+
+      </div>
+
+      <img src="image/care17.jpg">
+    </div>
+  </section>
+  
+    <!-- ========== END OF SERVICES IMAGE ========= -->
+
+
+  <section class="services-content">
+    <div class="services-card">
+      <h2 class="h22">Who are vulnerable people</h2>
+
+      <p>
+        Vulnerable people are individuals facing heightened risk due to factors such as age, health conditions, or other circumstances that may compromise their ability to cope with life's challenges independently. These individuals may include young ones, the elderly, those with disabilities, and those struggling with mental health issues. At Exodus Companions we provide essential services to address the specific needs and challenges faced by these individuals to ensure equitable support.
+      </p>
+      
+    </div>
+
+    <div class="services-card">
+      <h2 class="h22">Importance of Vulnerable Services</h2>
+
+      <p>
+         
+      </p>
+    </div>
+  </section>
+
+
+  <!--===== CONTACT US 2========== -->
+
+  <section class="contact-section2">
+    <div class="contact-text">
+
+      <h1 class="contact-booking">
+        Reach out to us for compassionate services that goes beyond the ordinary.
+      </h1>
+
+      <a href="contact.html">
+        <button class="btn2">
+          Use our contact form
+          <span class="bi bi-chevron-right icon2"></span>
+        </button>
+      </a>
+    </div>
+  </section>
+
+
+  <!--===== FOOTER SECTION ======== -->
+
+  <section class="footer1">
+
+    <div id="address">
+      <p id="p1">
+        Address
+      </p>
+
+      <p id="p2">
+        Exodus Companions <br>
+        Plot 8 Newton Ekwale Street, <br>
+        Peace Estate, <br>
+        Amuwo Odofin, <br>
+        Lagos.
+      </p>
+
+      <p id="p4">
+        <i class="bi bi-telephone"></i> +234 8132208451
+      </p> 
+
+      <p id="p6">
+        <i class="bi bi-envelope"></i> austinokebata@gmail.com 
+      </p>
+    </div>
+
+    <div id="link">
+      <p id="p11">Service Link</p>
+      <p id="p10"><a href="#">Home</a></p>
+
+      <p id="p12"><a href="#">Our Services</a></p>
+
+      <p id="p13"><a href="#">About Us</a></p>
+
+      <p id="p14"><a href="#">FAQ</a></p>
+
+      <p id="p15"><a href="#">Contact</a></p>
+    </div>
+
+    <div id="logo-icon">
+      <img src="image/Logo.png" class="logo">
+
+      <ul id="media-icon">
+        <li>
+          <a href=""><i class="bi bi-facebook media1"></i><a></a>
+        </li>
+        
+        <li>
+          <a href=""><i class="bi bi-whatsapp media2"></i></a>
+        </li>  
+      </ul>
+    </div>
+  </section>
+
+  <section class="footer2">
+    <p class="copyright">
+      &#169; 2023 Exodus Companions UK, All Rights Reserved
+    </p>
+  </section>
+
+
+  <!-- JavaScript for toggle menu -->
+  <script>
+    let navLink = document.getElementById("navLink");
+
+    function showMenu(){
+      navLink.style.right = "0";
+    }
+    function hideMenu(){
+      navLink.style.right = "-400px";
+    }
+
+  </script>
+</body>
+</html>
